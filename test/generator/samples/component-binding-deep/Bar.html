@@ -1,0 +1,18 @@
+{{#each ary as i}}
+	<Baz bind:x i="{{i}}">{{i}}</Baz>
+{{/each}}
+
+<script>
+	import Baz from './Baz.html';
+
+	export default {
+		data() {
+			return {
+				ary: [ 1, 2 ]
+			}
+		},
+		components: {
+			Baz
+		}
+	}
+</script>

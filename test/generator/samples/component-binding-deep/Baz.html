@@ -1,0 +1,11 @@
+<span on:click="set({ x: null })" data-currently-selected="{{isCurrentlySelected}}">
+	{{yield}}
+</span>
+
+<script>
+export default {
+	computed: {
+		isCurrentlySelected: (x, i) => x === i
+	}
+}
+</script>

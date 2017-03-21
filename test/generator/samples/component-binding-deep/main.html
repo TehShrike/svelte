@@ -1,0 +1,21 @@
+<Foo bind:x />
+<Foo bind:x />
+<p>
+	{{x}}
+</p>
+
+<script>
+	import Foo from './Foo.html';
+
+	export default {
+		data () {
+			return {
+				x: 2
+			}
+		},
+
+		components: {
+			Foo
+		}
+	};
+</script>
